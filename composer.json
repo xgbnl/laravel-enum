@@ -21,7 +21,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Liveweb\\Enum\\EnumServiceProvider"
+        "Xgbnl\\Enum\\EnumServiceProvider"
       ]
     }
   }
