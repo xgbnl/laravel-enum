@@ -5,7 +5,7 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Liveweb\\Enum\\": "src/"
+      "Xgbnl\\Enum\\": "src/"
     }
   },
   "authors": [
