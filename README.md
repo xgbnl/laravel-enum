@@ -6,6 +6,12 @@ composer require xgbnl/laravel-enum dev-main
 ```
 
 #### Simple
+
+make enum instance
+```shell
+php artisan make:enum Fruit
+```
+
 ```php
 enum Fruit:string implements \Liveweb\Enum\Contacts\Enumerable
 {

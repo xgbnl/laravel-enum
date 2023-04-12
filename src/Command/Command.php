@@ -20,7 +20,7 @@ class Command extends GeneratorCommand
      *
      * @var string
      */
-    protected $description = 'Create a new enum.';
+    protected $description = 'Create a new enum';
 
     protected $type = 'enum';
 
@@ -31,6 +31,6 @@ class Command extends GeneratorCommand
 
     protected function getStub(): string
     {
-        return __DIR__ . $this->type . '.stub';
+        return __DIR__ . '/' . $this->type . '.stub';
     }
 }
