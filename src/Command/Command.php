@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Liveweb\Enum\Command;
+namespace Xgbnl\Enum\Command;
 
 use Illuminate\Console\GeneratorCommand;
 

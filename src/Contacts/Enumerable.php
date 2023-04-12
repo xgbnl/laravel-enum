@@ -1,6 +1,6 @@
 <?php
 
-namespace Liveweb\Enum\Contacts;
+namespace Xgbnl\Enum\Contacts;
 
 use BackedEnum;
 

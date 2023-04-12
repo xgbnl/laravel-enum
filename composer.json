@@ -1,5 +1,5 @@
 {
-  "name": "liveweb/laravel-enum",
+  "name": "xgbnl/laravel-enum",
   "description": "PHP8 enum helper",
   "type": "library",
   "license": "MIT",
@@ -10,7 +10,7 @@
   },
   "authors": [
     {
-      "name": "Liveweb",
+      "name": "xgbnl",
       "email": "745502274@qq.com"
     }
   ],

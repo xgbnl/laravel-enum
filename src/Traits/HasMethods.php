@@ -1,6 +1,6 @@
 <?php
 
-namespace Liveweb\Enum\Traits;
+namespace Xgbnl\Enum\Traits;
 
 trait HasMethods
 {

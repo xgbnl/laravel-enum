@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace DummyNamespace;
 
-use Liveweb\Enum\Traits\HasMethods;
-use Liveweb\Enum\Contacts\Enumerable;
+use Xgbnl\Enum\Traits\HasMethods;
+use Xgbnl\Enum\Contacts\Enumerable;
 
 enum DummyClass implements Enumerable
 {

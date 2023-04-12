@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Liveweb\Enum;
+namespace Xgbnl\Enum;
 
+use Xgbnl\Enum\Command\Command;
 use Illuminate\Support\ServiceProvider;
-use Liveweb\Enum\Command\Command;
 
 class EnumServiceProvider extends ServiceProvider
 {

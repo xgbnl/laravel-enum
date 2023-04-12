@@ -1,8 +1,8 @@
 <?php
 
-namespace Liveweb\Enum\Traits;
+namespace Xgbnl\Enum\Traits;
 
-use Liveweb\Enum\Contacts\Enumerable;
+use Xgbnl\Enum\Contacts\Enumerable;
 
 trait Names
 {
