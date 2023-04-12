@@ -4,7 +4,7 @@ namespace Liveweb\Enum\Traits;
 
 trait HasMethods
 {
-    use Localization, Names, Options, Values, Format;
+    use Localization, Names, Options, Values;
 
     /**
      * Will be current enum convert localization array.
@@ -14,8 +14,8 @@ trait HasMethods
     public function localization(string $name): array
     {
         return [
-            self::KEY   => $name,
-            self::VALUE => $this->value,
+            'label'   => $name,
+            'value' => $this->value,
         ];
     }
 }
