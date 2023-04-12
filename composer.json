@@ -1,0 +1,28 @@
+{
+  "name": "liveweb/laravel-enum",
+  "description": "PHP8 enum helper",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Liveweb\\Enum\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Liveweb",
+      "email": "745502274@qq.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": "^8.2.4"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Liveweb\\Enum\\EnumServiceProvider"
+      ]
+    }
+  }
+}
