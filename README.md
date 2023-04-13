@@ -1,6 +1,7 @@
 ## Laravel Enum
 
 Install
+
 ```shell
 composer require xgbnl/laravel-enum dev-main
 ```
@@ -8,14 +9,21 @@ composer require xgbnl/laravel-enum dev-main
 #### Simple
 
 make enum instance
+
 ```shell
 php artisan make:enum Fruit
 ```
 
+Define your enum
+
 ```php
-enum Fruit:string implements \Liveweb\Enum\Contacts\Enumerable
+
+use Xgbnl\Enum\Contacts\Enumerable;
+use Xgbnl\Enum\Traits\HasMethods;
+
+enum Fruit:string implements Enumerable
 {
-    use \Liveweb\Enum\Traits\HasMethods;
+    use HasMethods;
     
     case Apple = 'apple';
     
@@ -31,7 +39,18 @@ enum Fruit:string implements \Liveweb\Enum\Contacts\Enumerable
 }
 ```
 
+Returned to the frontend for used
+
+```php
+
+public function enum(): array
+{
+    return Fruit::toLocalArray();
+}
+```
+
 #### Methods
+
 ```php
 // ['apple,'pear']
 Fruit::Values();
@@ -54,6 +73,7 @@ Fruit::toLocalArray(['except' => [Fruit::Pear]]);
 // 苹果
 Fruit::Apple->toLocalString();
 ```
+
 #### License
 
 MIT
