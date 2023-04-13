@@ -2,7 +2,7 @@
 
 namespace Xgbnl\Enum\Traits;
 
-enum Has
+trait Has
 {
     public static function exists(string $value): bool
     {

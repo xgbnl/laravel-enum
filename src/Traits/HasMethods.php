@@ -4,7 +4,7 @@ namespace Xgbnl\Enum\Traits;
 
 trait HasMethods
 {
-    use Localization, Names, Options, Values;
+    use Localization, Names, Options, Values,Has;
 
     /**
      * Will be current enum convert localization array.
