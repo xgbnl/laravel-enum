@@ -28,6 +28,6 @@ trait Localization
 
     public function toLocalString(): string
     {
-        return $this->convert()[self::KEY];
+        return $this->convert()['label'];
     }
 }
