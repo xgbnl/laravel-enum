@@ -42,4 +42,11 @@ interface Enumerable extends BackedEnum
      * @return array
      */
     public static function options(): array;
+
+    /**
+     * Determines whether the given value exists.
+     * @param string $value
+     * @return bool
+     */
+    public static function exists(string $value): bool;
 }

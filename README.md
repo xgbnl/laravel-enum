@@ -53,6 +53,9 @@ Fruit::Options();
 // [0 => ['label' => '苹果','value' => 'apple] .... ]
 Fruit::toLocalArray();
 
+// false
+Fruit::exists('pizza');
+
 // or
 Fruit::toLocalArray(['only' => [Fruit::Pear]]);
 
