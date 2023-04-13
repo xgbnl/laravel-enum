@@ -4,7 +4,7 @@ namespace Xgbnl\Enum\Traits;
 
 trait HasMethods
 {
-    use Localization, Names, Options, Values,Has;
+    use Localization, Names, Options, Values, Has, Str;
 
     /**
      * Will be current enum convert localization array.
@@ -14,7 +14,7 @@ trait HasMethods
     public function localization(string $name): array
     {
         return [
-            'label'   => $name,
+            'label' => $name,
             'value' => $this->value,
         ];
     }

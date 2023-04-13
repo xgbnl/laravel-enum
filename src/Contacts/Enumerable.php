@@ -49,4 +49,11 @@ interface Enumerable extends BackedEnum
      * @return bool
      */
     public static function exists(string $value): bool;
+
+    /**
+     * Join array elements with a string.
+     * @param string|null $separator
+     * @return string
+     */
+    public static function join(?string $separator = null): string;
 }
