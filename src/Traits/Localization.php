@@ -6,7 +6,7 @@ use Xgbnl\Enum\Contacts\Enumerable;
 
 trait Localization
 {
-    public static function toLocalArray(array $options = []): array
+    public static function toLocalArray(array $options = [], bool $format = true): array
     {
         $cases = self::cases();
 
@@ -20,8 +20,8 @@ trait Localization
             };
         }
 
-        return array_reduce($cases, function (array $carry, Enumerable $enumerable): array {
-            $carry[] = $enumerable->convert();
+        return array_reduce($cases, function (array $carry, Enumerable $enumerable) use ($format): array {
+            $carry[] = $format ? $enumerable->convert() : $enumerable;
             return $carry;
         }, []);
     }

@@ -21,9 +21,10 @@ interface Enumerable extends BackedEnum
     /**
      * Get current enum class javascript object collections.
      * @param array $options
+     * @param bool $format Determines whether to format the enumeration
      * @return array
      */
-    public static function toLocalArray(array $options = []): array;
+    public static function toLocalArray(array $options = [],bool $format = true): array;
 
     /**
      * Get enum values.
