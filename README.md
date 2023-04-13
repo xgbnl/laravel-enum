@@ -38,17 +38,6 @@ enum Fruit:string implements Enumerable
     }
 }
 ```
-
-Returned to the frontend for used
-
-```php
-
-public function enum(): array
-{
-    return Fruit::toLocalArray();
-}
-```
-
 #### Methods
 
 ```php
@@ -72,6 +61,9 @@ Fruit::toLocalArray(['except' => [Fruit::Pear]]);
 
 // 苹果
 Fruit::Apple->toLocalString();
+
+// ['label' => '苹果','value' => 'apple']
+Fruit::Apple->convert();
 ```
 
 #### License
