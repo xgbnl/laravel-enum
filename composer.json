@@ -16,7 +16,7 @@
   ],
   "minimum-stability": "stable",
   "require": {
-    "php": "^8.2.4"
+    "php": "^8.2.0"
   },
   "extra": {
     "laravel": {
