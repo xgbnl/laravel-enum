@@ -11,7 +11,7 @@ composer require xgbnl/enum dev-main
 Create enum.
 
 ```shell
-php artisan make:Enum TestEnum
+php artisan make:enum TestEnum
 ```
 
 Define your Enums
