@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Dingo\Enum\Command;
+namespace Dingo\Enums\Command;
 
 use Illuminate\Console\GeneratorCommand;
 
@@ -13,20 +13,20 @@ class Command extends GeneratorCommand
      *
      * @var string
      */
-    protected $name = 'make:enum';
+    protected $name = 'make:Enums';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Create a new enum';
+    protected $description = 'Create a new Enums';
 
-    protected $type = 'enum';
+    protected $type = 'Enums';
 
     protected function getDefaultNameSpace($rootNamespace): string
     {
-        return $rootNamespace . '\\' . 'Enums';
+        return $rootNamespace . '\\' . 'Enumss';
     }
 
     protected function getStub(): string

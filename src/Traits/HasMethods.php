@@ -1,13 +1,13 @@
 <?php
 
-namespace Dingo\Enum\Traits;
+namespace Dingo\Enums\Traits;
 
 trait HasMethods
 {
     use Localization, Names, Options, Values, Has, Str;
 
     /**
-     * Will be current enum convert localization array.
+     * Will be current Enums convert localization array.
      * @param string $name
      * @return array
      */

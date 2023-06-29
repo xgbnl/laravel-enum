@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Dingo\Enum;
+namespace Dingo\Enums;
 
-use Dingo\Enum\Command\Command;
+use Dingo\Enums\Command\Command;
 use Illuminate\Support\ServiceProvider;
 
-class EnumServiceProvider extends ServiceProvider
+class EnumsServiceProvider extends ServiceProvider
 {
 
     protected array $commands = [

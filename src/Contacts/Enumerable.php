@@ -1,45 +1,45 @@
 <?php
 
-namespace Dingo\Enum\Contacts;
+namespace Dingo\Enums\Contacts;
 
-use BackedEnum;
+use BackedEnums;
 
-interface Enumerable extends BackedEnum
+interface Enumserable extends BackedEnums
 {
     /**
-     * Setting enum object to javascript object format.
+     * Setting Enums object to javascript object format.
      * @return array
      */
     public function convert(): array;
 
     /**
-     * Will be current enum object conversion to zh_cn.
+     * Will be current Enums object conversion to zh_cn.
      * @return string
      */
     public function description(): string;
 
     /**
-     * Get current enum class javascript object collections.
+     * Get current Enums class javascript object collections.
      * @param array $options
-     * @param bool $format Determines whether to format the enumeration
+     * @param bool $format Determines whether to format the Enumseration
      * @return array
      */
     public static function toLocalArray(array $options = [],bool $format = true): array;
 
     /**
-     * Get enum values.
+     * Get Enums values.
      * @return array
      */
     public static function values(): array;
 
     /**
-     * Get enum names.
+     * Get Enums names.
      * @return array
      */
     public static function names(): array;
 
     /**
-     * Get enum key and value array.
+     * Get Enums key and value array.
      * @return array
      */
     public static function options(): array;

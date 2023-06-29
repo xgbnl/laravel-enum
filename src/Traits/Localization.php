@@ -1,8 +1,8 @@
 <?php
 
-namespace Dingo\Enum\Traits;
+namespace Dingo\Enums\Traits;
 
-use Dingo\Enum\Contacts\Enumerable;
+use Dingo\Enums\Contacts\Enumserable;
 
 trait Localization
 {
@@ -15,13 +15,13 @@ trait Localization
             $option = array_key_first($options);
 
             $cases = match ($option) {
-                'except' => array_filter($cases, fn(Enumerable $enum) => !in_array($enum, $options[$option])),
-                'only'   => array_filter($cases, fn(Enumerable $enum) => in_array($enum, $options[$option])),
+                'except' => array_filter($cases, fn(Enumserable $Enums) => !in_array($Enums, $options[$option])),
+                'only'   => array_filter($cases, fn(Enumserable $Enums) => in_array($Enums, $options[$option])),
             };
         }
 
-        return array_reduce($cases, function (array $carry, Enumerable $enumerable) use ($format): array {
-            $carry[] = $format ? $enumerable->convert() : $enumerable;
+        return array_reduce($cases, function (array $carry, Enumserable $Enumserable) use ($format): array {
+            $carry[] = $format ? $Enumserable->convert() : $Enumserable;
             return $carry;
         }, []);
     }

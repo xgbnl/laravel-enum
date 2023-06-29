@@ -1,6 +1,6 @@
 <?php
 
-namespace Dingo\Enum\Traits;
+namespace Dingo\Enums\Traits;
 
 trait Has
 {

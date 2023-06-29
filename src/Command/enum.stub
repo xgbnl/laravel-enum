@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace DummyNamespace;
 
-use Dingo\Enum\Traits\HasMethods;
-use Dingo\Enum\Contacts\Enumerable;
+use Dingo\Enums\Traits\HasMethods;
+use Dingo\Enums\Contacts\Enumserable;
 
-enum DummyClass implements Enumerable
+Enums DummyClass implements Enumserable
 {
     use HasMethods;
 

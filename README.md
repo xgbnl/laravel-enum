@@ -1,27 +1,27 @@
-## Laravel Enum
+## Laravel Enums
 
 Install
 
 ```shell
-composer require Dingo/laravel-enum dev-main
+composer require Dingo/laravel-Enums dev-main
 ```
 
 #### Simple
 
-make enum instance
+make Enums instance
 
 ```shell
-php artisan make:enum Fruit
+php artisan make:Enums Fruit
 ```
 
-Define your enum
+Define your Enums
 
 ```php
 
-use Dingo\Enum\Contacts\Enumerable;
-use Dingo\Enum\Traits\HasMethods;
+use Dingo\Enums\Contacts\Enumserable;
+use Dingo\Enums\Traits\HasMethods;
 
-enum Fruit:string implements Enumerable
+Enums Fruit:string implements Enumserable
 {
     use HasMethods;
     

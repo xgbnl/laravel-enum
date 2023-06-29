@@ -1,11 +1,11 @@
 {
-  "name": "xgbnl/enum",
-  "description": "Laravel enum component.",
+  "name": "xgbnl/Enums",
+  "description": "Laravel Enums component.",
   "type": "library",
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Dingo\\Enum\\": "src/"
+      "Dingo\\Enums\\": "src/"
     }
   },
   "authors": [
@@ -26,7 +26,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Dingo\\Enum\\EnumServiceProvider"
+        "Dingo\\Enums\\EnumsServiceProvider"
       ]
     }
   }

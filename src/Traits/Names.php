@@ -1,15 +1,15 @@
 <?php
 
-namespace Dingo\Enum\Traits;
+namespace Dingo\Enums\Traits;
 
-use Dingo\Enum\Contacts\Enumerable;
+use Dingo\Enums\Contacts\Enumserable;
 
 trait Names
 {
     public static function names(): array
     {
-        return array_reduce(self::cases(), function (array $carry, Enumerable $enumerable): array {
-            $carry[] = $enumerable->name;
+        return array_reduce(self::cases(), function (array $carry, Enumserable $Enumserable): array {
+            $carry[] = $Enumserable->name;
             return $carry;
         }, []);
     }
