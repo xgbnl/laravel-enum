@@ -16,7 +16,7 @@ interface Enumerable extends BackedEnum
      * Will be current enum object conversion to zh_cn.
      * @return string
      */
-    public function toLocalString(): string;
+    public function description(): string;
 
     /**
      * Get current enum class javascript object collections.
