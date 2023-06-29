@@ -9,7 +9,7 @@ use Attribute;
 #[Attribute]
 readonly class Descriptor
 {
-    protected string $description;
+    public string $description;
 
     public function __construct(string $description)
     {

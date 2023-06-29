@@ -5,14 +5,11 @@ declare(strict_types=1);
 namespace DummyNamespace;
 
 use Dingo\Enums\Traits\HasMethods;
-use Dingo\Enums\Contacts\Enumserable;
+use Dingo\Enums\Contacts\Enumerable;
+use Dingo\Enums\Traits\GetsAttributes;
 
-Enums DummyClass implements Enumserable
+Enums DummyClass implements Enumerable
 {
-    use HasMethods;
+    use HasMethods,GetsAttributes;
 
-    public function convert(): array
-    {
-        // TODO: Implement convert() method.
-    }
 }
