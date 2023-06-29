@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace DummyNamespace;
 
-use Xgbnl\Enum\Traits\HasMethods;
-use Xgbnl\Enum\Contacts\Enumerable;
+use Dingo\Enum\Traits\HasMethods;
+use Dingo\Enum\Contacts\Enumerable;
 
 enum DummyClass implements Enumerable
 {

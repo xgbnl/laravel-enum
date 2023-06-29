@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Xgbnl\Enum\Command;
+namespace Dingo\Enum\Command;
 
 use Illuminate\Console\GeneratorCommand;
 

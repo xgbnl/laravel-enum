@@ -1,8 +1,8 @@
 <?php
 
-namespace Xgbnl\Enum\Traits;
+namespace Dingo\Enum\Traits;
 
-use Xgbnl\Enum\Contacts\Enumerable;
+use Dingo\Enum\Contacts\Enumerable;
 
 trait Localization
 {

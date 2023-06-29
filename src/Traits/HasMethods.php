@@ -1,6 +1,6 @@
 <?php
 
-namespace Xgbnl\Enum\Traits;
+namespace Dingo\Enum\Traits;
 
 trait HasMethods
 {

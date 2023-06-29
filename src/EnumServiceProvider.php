@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Xgbnl\Enum;
+namespace Dingo\Enum;
 
-use Xgbnl\Enum\Command\Command;
+use Dingo\Enum\Command\Command;
 use Illuminate\Support\ServiceProvider;
 
 class EnumServiceProvider extends ServiceProvider

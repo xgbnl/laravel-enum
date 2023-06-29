@@ -1,6 +1,6 @@
 <?php
 
-namespace Xgbnl\Enum\Contacts;
+namespace Dingo\Enum\Contacts;
 
 use BackedEnum;
 

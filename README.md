@@ -3,7 +3,7 @@
 Install
 
 ```shell
-composer require xgbnl/laravel-enum dev-main
+composer require Dingo/laravel-enum dev-main
 ```
 
 #### Simple
@@ -18,8 +18,8 @@ Define your enum
 
 ```php
 
-use Xgbnl\Enum\Contacts\Enumerable;
-use Xgbnl\Enum\Traits\HasMethods;
+use Dingo\Enum\Contacts\Enumerable;
+use Dingo\Enum\Traits\HasMethods;
 
 enum Fruit:string implements Enumerable
 {
