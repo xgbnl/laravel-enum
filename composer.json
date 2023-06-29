@@ -1,5 +1,5 @@
 {
-  "name": "xgbnl/enums",
+  "name": "xgbnl/enum",
   "description": "Laravel Enums component.",
   "type": "library",
   "license": "MIT",
@@ -28,7 +28,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Dingo\\Enums\\EnumsServiceProvider"
+        "Dingo\\Enums\\ServiceProvider"
       ]
     }
   }

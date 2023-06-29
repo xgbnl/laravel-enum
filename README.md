@@ -1,72 +1,57 @@
-## Laravel Enums
+## Laravel Enum
 
 Install
 
 ```shell
-composer require Dingo/laravel-Enums dev-main
+composer require xgbnl/enum dev-main
 ```
 
 #### Simple
 
-make Enums instance
+Create enum.
 
 ```shell
-php artisan make:Enums Fruit
+php artisan make:Enum TestEnum
 ```
 
 Define your Enums
 
 ```php
 
-use Dingo\Enums\Contacts\Enumserable;
+use Dingo\Enums\Attributes\Descriptor;
+use Dingo\Enums\Contacts\Descriptor as Description;
+use Dingo\Enums\Contacts\Converter;
+use Dingo\Enums\Contacts\Enumerable;
+use Dingo\Enums\Traits\Convert;
+use Dingo\Enums\Traits\GetsAttributes;
 use Dingo\Enums\Traits\HasMethods;
 
-Enums Fruit:string implements Enumserable
+Enums TestEnum:string implements Enumserable,Converter,Description
 {
-    use HasMethods;
+    use HasMethods,GetsAttributes,Convert;
     
-    case Apple = 'apple';
-    
-    case Pear = 'pear';
-    
-    public function convert() : array
-    {
-        return match ($this){
-            self::Apple => $this->localization('苹果'),
-            self::Pear => $this->localization('梨'),
-        };
-    }
+    #[Descriptor('一团糟')]
+    case Foo = 'foo';
+
+    #[Descriptor('一塌糊涂')]
+    case Bar = 'bar';
 }
 ```
-#### Methods
+
+**Method**
 
 ```php
-// ['apple,'pear']
-Fruit::Values();
 
-// ['Apple','Pear']
-Fruit::Names();
+\Dingo\Test\Unit\TestEnum::Bar->description(); // '一塌糊涂'
 
-// ['Apple' => 'apple','Pear' => 'pear']
-Fruit::Options();
+\Dingo\Test\Unit\TestEnum::Bar->convert(); // ['name' => '一塌糊涂' 'value' => 'bar']
 
-// [0 => ['label' => '苹果','value' => 'apple] .... ]
-Fruit::toLocalArray();
+\Dingo\Test\Unit\TestEnum::options();
 
-// false
-Fruit::exists('pizza');
+\Dingo\Test\Unit\TestEnum::names();
 
-// or
-Fruit::toLocalArray(['only' => [Fruit::Pear]]);
+\Dingo\Test\Unit\TestEnum::values();
 
-// or
-Fruit::toLocalArray(['except' => [Fruit::Pear]]);
-
-// 苹果
-Fruit::Apple->toLocalString();
-
-// ['label' => '苹果','value' => 'apple']
-Fruit::Apple->convert();
 ```
 
 #### License
