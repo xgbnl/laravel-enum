@@ -7,7 +7,7 @@ namespace Dingo\Enums\Attributes;
 use Attribute;
 
 #[Attribute]
-readonly class Descriptor
+readonly class Description
 {
     public string $description;
 

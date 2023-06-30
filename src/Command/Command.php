@@ -13,20 +13,20 @@ class Command extends GeneratorCommand
      *
      * @var string
      */
-    protected $name = 'make:Enums';
+    protected $name = 'make:enum';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Create a new Enums';
+    protected $description = 'Create a new enum.';
 
-    protected $type = 'Enums';
+    protected $type = 'enum';
 
     protected function getDefaultNameSpace($rootNamespace): string
     {
-        return $rootNamespace . '\\' . 'Enumss';
+        return $rootNamespace . '\\' . 'Enums';
     }
 
     protected function getStub(): string

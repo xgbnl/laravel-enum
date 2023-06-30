@@ -4,15 +4,15 @@ declare(strict_types=1);
 
 namespace DummyNamespace;
 
-use Dingo\Enums\Attributes\Descriptor;
-use Dingo\Enums\Contacts\Descriptor as Description;
+use Dingo\Enums\Attributes\Description;
+use Dingo\Enums\Contacts\Descriptor;
 use Dingo\Enums\Contacts\Converter;
 use Dingo\Enums\Contacts\Enumerable;
 use Dingo\Enums\Traits\Convert;
 use Dingo\Enums\Traits\GetsAttributes;
 use Dingo\Enums\Traits\HasMethods;
 
-Enums DummyClass implements Enumerable,Description,Converter
+Enums DummyClass implements Enumerable,Descriptor,Converter
 {
     use HasMethods,GetsAttributes,Convert;
 

@@ -18,7 +18,7 @@ Define your Enums
 
 ```php
 
-use Dingo\Enums\Attributes\Descriptor;
+use Dingo\Enums\Attributes\Description;
 use Dingo\Enums\Contacts\Descriptor as Description;
 use Dingo\Enums\Contacts\Converter;
 use Dingo\Enums\Contacts\Enumerable;

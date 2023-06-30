@@ -3,7 +3,7 @@
 namespace Dingo\Enums\Traits;
 
 use ReflectionClassConstant;
-use Dingo\Enums\Attributes\Descriptor;
+use Dingo\Enums\Attributes\Description;
 
 trait GetsAttributes
 {
@@ -12,14 +12,14 @@ trait GetsAttributes
         return $this->resolveDescriptor()->description;
     }
 
-    private function resolveDescriptor(): Descriptor
+    private function resolveDescriptor(): Description
     {
         $reflector = new ReflectionClassConstant(self::class, $this->name);
 
         $attributes = $reflector->getAttributes();
 
         if (count($attributes) === 0) {
-            return new Descriptor($this->value);
+            return new Description($this->value);
         }
 
         return $attributes[0]->newInstance();
