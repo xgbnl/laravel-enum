@@ -19,21 +19,21 @@ Define your Enums
 ```php
 
 use Dingo\Enums\Attributes\Description;
-use Dingo\Enums\Contacts\Descriptor as Description;
+use Dingo\Enums\Contacts\Descriptor;
 use Dingo\Enums\Contacts\Converter;
 use Dingo\Enums\Contacts\Enumerable;
 use Dingo\Enums\Traits\Convert;
 use Dingo\Enums\Traits\GetsAttributes;
 use Dingo\Enums\Traits\HasMethods;
 
-Enums TestEnum:string implements Enumserable,Converter,Description
+Enums TestEnum:string implements Enumserable,Converter,Descriptor
 {
     use HasMethods,GetsAttributes,Convert;
     
-    #[Descriptor('my_foo')]
+    #[Description('my_foo')]
     case Foo = 'foo';
 
-    #[Descriptor('my_bar')]
+    #[Description('my_bar')]
     case Bar = 'bar';
 }
 ```
@@ -45,6 +45,8 @@ Enums TestEnum:string implements Enumserable,Converter,Description
 \Dingo\Test\Unit\TestEnum::Bar->description(); // 'my_bar'
 
 \Dingo\Test\Unit\TestEnum::Bar->convert(); // ['name' => 'Bar' 'value' => 'bar']
+
+// ... more method.
 
 \Dingo\Test\Unit\TestEnum::options();
 
