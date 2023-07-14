@@ -19,7 +19,7 @@ trait GetsAttributes
         $attributes = $reflector->getAttributes();
 
         if (count($attributes) === 0) {
-            return new Description($this->value);
+            return new Description($this->name);
         }
 
         return $attributes[0]->newInstance();

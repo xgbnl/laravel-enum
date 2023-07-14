@@ -30,10 +30,10 @@ Enums TestEnum:string implements Enumserable,Converter,Description
 {
     use HasMethods,GetsAttributes,Convert;
     
-    #[Descriptor('一团糟')]
+    #[Descriptor('my_foo')]
     case Foo = 'foo';
 
-    #[Descriptor('一塌糊涂')]
+    #[Descriptor('my_bar')]
     case Bar = 'bar';
 }
 ```
@@ -42,9 +42,9 @@ Enums TestEnum:string implements Enumserable,Converter,Description
 
 ```php
 
-\Dingo\Test\Unit\TestEnum::Bar->description(); // '一塌糊涂'
+\Dingo\Test\Unit\TestEnum::Bar->description(); // 'my_bar'
 
-\Dingo\Test\Unit\TestEnum::Bar->convert(); // ['name' => '一塌糊涂' 'value' => 'bar']
+\Dingo\Test\Unit\TestEnum::Bar->convert(); // ['name' => 'Bar' 'value' => 'bar']
 
 \Dingo\Test\Unit\TestEnum::options();
 

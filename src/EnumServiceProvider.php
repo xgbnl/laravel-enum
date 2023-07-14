@@ -6,7 +6,7 @@ namespace Dingo\Enums;
 
 use Dingo\Enums\Command\Command;
 
-class ServiceProvider extends \Illuminate\Support\ServiceProvider
+class EnumServiceProvider extends \Illuminate\Support\ServiceProvider
 {
 
     protected array $commands = [
