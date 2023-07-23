@@ -1,6 +1,6 @@
 <?php
 
-namespace Dingo\Enums\Contacts;
+namespace Koala\Enums\Contacts;
 
 interface Converter
 {

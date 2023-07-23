@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Dingo\Enums;
+namespace Koala\Enums;
 
-use Dingo\Enums\Command\Command;
+use Koala\Enums\Command\Command;
 
 class EnumServiceProvider extends \Illuminate\Support\ServiceProvider
 {

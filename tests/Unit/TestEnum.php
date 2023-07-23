@@ -1,14 +1,14 @@
 <?php
 
-namespace Dingo\Test\Unit;
+namespace Koala\Test\Unit;
 
-use Dingo\Enums\Attributes\Description;
-use Dingo\Enums\Contacts\Descriptor ;
-use Dingo\Enums\Contacts\Converter;
-use Dingo\Enums\Contacts\Enumerable;
-use Dingo\Enums\Traits\Convert;
-use Dingo\Enums\Traits\GetsAttributes;
-use Dingo\Enums\Traits\HasMethods;
+use Koala\Enums\Attributes\Description;
+use Koala\Enums\Contacts\Descriptor ;
+use Koala\Enums\Contacts\Converter;
+use Koala\Enums\Contacts\Enumerable;
+use Koala\Enums\Traits\Convert;
+use Koala\Enums\Traits\GetsAttributes;
+use Koala\Enums\Traits\HasMethods;
 
 enum TestEnum: string implements Enumerable,Descriptor,Converter
 {

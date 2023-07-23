@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Dingo\Enums\Attributes;
+namespace Koala\Enums\Attributes;
 
 use Attribute;
 

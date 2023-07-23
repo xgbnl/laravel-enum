@@ -1,6 +1,6 @@
 <?php
 
-namespace Dingo\Test\Unit;
+namespace Koala\Test\Unit;
 
 use PHPUnit\Framework\TestCase;
 

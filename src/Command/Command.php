@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Dingo\Enums\Command;
+namespace Koala\Enums\Command;
 
 use Illuminate\Console\GeneratorCommand;
 

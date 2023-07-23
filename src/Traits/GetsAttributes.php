@@ -1,9 +1,9 @@
 <?php
 
-namespace Dingo\Enums\Traits;
+namespace Koala\Enums\Traits;
 
 use ReflectionClassConstant;
-use Dingo\Enums\Attributes\Description;
+use Koala\Enums\Attributes\Description;
 
 trait GetsAttributes
 {

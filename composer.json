@@ -5,13 +5,13 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Dingo\\Enums\\": "src/",
-      "Dingo\\Test\\": "tests/"
+      "Koala\\Enums\\": "src/",
+      "Koala\\Test\\": "tests/"
     }
   },
   "authors": [
     {
-      "name": "Dingo",
+      "name": "xgbnl",
       "email": "745502274@qq.com"
     }
   ],
