@@ -1,6 +1,6 @@
 <?php
 
-namespace Koala\Enums\Contacts;
+namespace Elephant\Enums\Contacts;
 
 interface Enumerable extends \BackedEnum
 {

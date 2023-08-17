@@ -18,13 +18,13 @@ Define your Enums
 
 ```php
 
-use Koala\Enums\Attributes\Description;
-use Koala\Enums\Contacts\Descriptor;
-use Koala\Enums\Contacts\Converter;
-use Koala\Enums\Contacts\Enumerable;
-use Koala\Enums\Traits\Convert;
-use Koala\Enums\Traits\GetsAttributes;
-use Koala\Enums\Traits\HasMethods;
+use Elephant\Enums\Attributes\Description;
+use Elephant\Enums\Contacts\Descriptor;
+use Elephant\Enums\Contacts\Converter;
+use Elephant\Enums\Contacts\Enumerable;
+use Elephant\Enums\Traits\Convert;
+use Elephant\Enums\Traits\GetsAttributes;
+use Elephant\Enums\Traits\HasMethods;
 
 Enums TestEnum:string implements Enumserable,Converter,Descriptor
 {
@@ -42,17 +42,17 @@ Enums TestEnum:string implements Enumserable,Converter,Descriptor
 
 ```php
 
-\Koala\Test\Unit\TestEnum::Bar->description(); // 'my_bar'
+\Elephant\Test\Unit\TestEnum::Bar->description(); // 'my_bar'
 
-\Koala\Test\Unit\TestEnum::Bar->convert(); // ['name' => 'Bar' 'value' => 'bar']
+\Elephant\Test\Unit\TestEnum::Bar->convert(); // ['name' => 'Bar' 'value' => 'bar']
 
 // ... more method.
 
-\Koala\Test\Unit\TestEnum::options();
+\Elephant\Test\Unit\TestEnum::options();
 
-\Koala\Test\Unit\TestEnum::names();
+\Elephant\Test\Unit\TestEnum::names();
 
-\Koala\Test\Unit\TestEnum::values();
+\Elephant\Test\Unit\TestEnum::values();
 
 ```
 

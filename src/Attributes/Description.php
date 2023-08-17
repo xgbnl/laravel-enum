@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Koala\Enums\Attributes;
+namespace Elephant\Enums\Attributes;
 
 use Attribute;
 

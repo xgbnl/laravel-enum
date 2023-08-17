@@ -1,9 +1,9 @@
 <?php
 
-namespace Koala\Enums\Traits;
+namespace Elephant\Enums\Traits;
 
 use ReflectionClassConstant;
-use Koala\Enums\Attributes\Description;
+use Elephant\Enums\Attributes\Description;
 
 trait GetsAttributes
 {

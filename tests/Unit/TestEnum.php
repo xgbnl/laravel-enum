@@ -1,14 +1,14 @@
 <?php
 
-namespace Koala\Test\Unit;
+namespace Elephant\Test\Unit;
 
-use Koala\Enums\Attributes\Description;
-use Koala\Enums\Contacts\Descriptor ;
-use Koala\Enums\Contacts\Converter;
-use Koala\Enums\Contacts\Enumerable;
-use Koala\Enums\Traits\Convert;
-use Koala\Enums\Traits\GetsAttributes;
-use Koala\Enums\Traits\HasMethods;
+use Elephant\Enums\Attributes\Description;
+use Elephant\Enums\Contacts\Descriptor ;
+use Elephant\Enums\Contacts\Converter;
+use Elephant\Enums\Contacts\Enumerable;
+use Elephant\Enums\Traits\Convert;
+use Elephant\Enums\Traits\GetsAttributes;
+use Elephant\Enums\Traits\HasMethods;
 
 enum TestEnum: string implements Enumerable,Descriptor,Converter
 {

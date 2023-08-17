@@ -1,8 +1,8 @@
 <?php
 
-namespace Koala\Enums\Traits;
+namespace Elephant\Enums\Traits;
 
-use Koala\Enums\Contacts\Enumerable;
+use Elephant\Enums\Contacts\Enumerable;
 use JetBrains\PhpStorm\ArrayShape;
 
 trait HasMethods

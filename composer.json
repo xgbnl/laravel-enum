@@ -5,8 +5,8 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Koala\\Enums\\": "src/",
-      "Koala\\Test\\": "tests/"
+      "Elephant\\Enums\\": "src/",
+      "Elephant\\Test\\": "tests/"
     }
   },
   "authors": [

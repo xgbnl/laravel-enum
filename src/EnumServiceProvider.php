@@ -2,11 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Koala\Enums;
+namespace Elephant\Enums;
 
-use Koala\Enums\Command\Command;
+use Elephant\Enums\Command\Command;
+use Illuminate\Support\ServiceProvider;
 
-class EnumServiceProvider extends \Illuminate\Support\ServiceProvider
+class EnumServiceProvider extends ServiceProvider
 {
 
     protected array $commands = [
