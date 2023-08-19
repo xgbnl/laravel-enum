@@ -12,7 +12,7 @@ use Elephant\Enums\Traits\Convert;
 use Elephant\Enums\Traits\GetsAttributes;
 use Elephant\Enums\Traits\HasMethods;
 
-Enums DummyClass implements Enumerable,Descriptor,Converter
+enum DummyClass implements Enumerable,Descriptor,Converter
 {
     use HasMethods,GetsAttributes,Convert;
 }
