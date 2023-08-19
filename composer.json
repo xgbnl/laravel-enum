@@ -1,6 +1,6 @@
 {
   "name": "xgbnl/enum",
-  "description": "Laravel Enums component.",
+  "description": "Laravel-based Enum Component.",
   "type": "library",
   "license": "MIT",
   "autoload": {
@@ -28,7 +28,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "EnumServiceProvider"
+        "Elephant\\Enums\\EnumServiceProvider"
       ]
     }
   }

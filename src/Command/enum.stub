@@ -15,5 +15,4 @@ use Elephant\Enums\Traits\HasMethods;
 Enums DummyClass implements Enumerable,Descriptor,Converter
 {
     use HasMethods,GetsAttributes,Convert;
-
 }
