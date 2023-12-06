@@ -2,11 +2,13 @@
 
 namespace Elephant\Enums\Traits;
 
+use Override;
 use ReflectionClassConstant;
 use Elephant\Enums\Attributes\Description;
 
 trait GetsAttributes
 {
+    #[Override]
     public function description(): string
     {
         return $this->resolveDescriptor()->description;

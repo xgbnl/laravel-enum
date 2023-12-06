@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Elephant\Enums\Command;
 
 use Illuminate\Console\GeneratorCommand;
+use Override;
 
 class Command extends GeneratorCommand
 {
@@ -24,11 +25,13 @@ class Command extends GeneratorCommand
 
     protected $type = 'enum';
 
+    #[Override]
     protected function getDefaultNameSpace($rootNamespace): string
     {
         return $rootNamespace . '\\' . 'Enums';
     }
 
+    #[Override]
     protected function getStub(): string
     {
         return __DIR__ . '/' . $this->type . '.stub';

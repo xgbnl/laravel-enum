@@ -7,7 +7,7 @@ namespace Elephant\Enums;
 use Elephant\Enums\Command\Command;
 use Illuminate\Support\ServiceProvider;
 
-class EnumServiceProvider extends ServiceProvider
+final class EnumServiceProvider extends ServiceProvider
 {
 
     protected array $commands = [

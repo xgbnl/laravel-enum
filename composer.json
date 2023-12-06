@@ -17,7 +17,7 @@
   ],
   "minimum-stability": "stable",
   "require": {
-    "php": "^8.2.0"
+    "php": "^8.3.0"
   },
   "require-dev": {
     "illuminate/support": "v10.14.1",

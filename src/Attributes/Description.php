@@ -7,7 +7,7 @@ namespace Elephant\Enums\Attributes;
 use Attribute;
 
 #[Attribute]
-readonly class Description
+final readonly class Description
 {
     public string $description;
 

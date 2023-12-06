@@ -4,16 +4,19 @@ namespace Elephant\Enums\Traits;
 
 use Elephant\Enums\Contacts\Enumerable;
 use JetBrains\PhpStorm\ArrayShape;
+use Override;
 
 trait HasMethods
 {
     #[ArrayShape(['string'])]
+    #[Override]
     public static function names(): array
     {
         return self::map('name');
     }
 
     #[ArrayShape(['string'])]
+    #[Override]
     public static function values(): array
     {
         return self::map('value');
