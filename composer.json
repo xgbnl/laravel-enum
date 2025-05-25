@@ -17,11 +17,11 @@
   ],
   "minimum-stability": "stable",
   "require": {
-    "php": "^8.3.0"
+    "php": "^8.4.0"
   },
   "require-dev": {
-    "illuminate/support": "v10.14.1",
-    "illuminate/console": "v10.14.1",
+    "illuminate/support": "v12.0",
+    "illuminate/console": "v12.0",
     "phpunit/phpunit": "^10.2",
     "symfony/var-dumper": "^6.3"
   },
