@@ -7,13 +7,11 @@ use Override;
 
 trait HasMethods
 {
-    #[Override]
     public static function names(bool $tolower = false): array
     {
         return self::map('name', $tolower);
     }
 
-    #[Override]
     public static function values(): array
     {
         return self::map('value', false);

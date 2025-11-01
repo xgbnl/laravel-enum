@@ -25,13 +25,11 @@ class Command extends GeneratorCommand
 
     protected $type = 'enum';
 
-    #[Override]
     protected function getDefaultNameSpace($rootNamespace): string
     {
         return $rootNamespace . '\\' . 'Enums';
     }
 
-    #[Override]
     protected function getStub(): string
     {
         return __DIR__ . '/' . $this->type . '.stub';

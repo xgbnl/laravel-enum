@@ -8,7 +8,6 @@ use Elephant\Enums\Attributes\Description;
 
 trait GetsAttributes
 {
-    #[Override]
     public function description(): string
     {
         return $this->resolveDescriptor()->description;
