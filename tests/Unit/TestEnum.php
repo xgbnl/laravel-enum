@@ -3,16 +3,14 @@
 namespace Elephant\Test\Unit;
 
 use Elephant\Enums\Attributes\Description;
-use Elephant\Enums\Contacts\Descriptor ;
-use Elephant\Enums\Contacts\Converter;
 use Elephant\Enums\Contacts\Enumerable;
-use Elephant\Enums\Traits\Convert;
+use Elephant\Enums\Contacts\Presenter;
 use Elephant\Enums\Traits\GetsAttributes;
 use Elephant\Enums\Traits\HasMethods;
 
-enum TestEnum: string implements Enumerable,Descriptor,Converter
+enum TestEnum: string implements Enumerable,Presenter
 {
-    use HasMethods,GetsAttributes,Convert;
+    use HasMethods,GetsAttributes;
 
     #[Description('一团糟')]
     case Foo = 'foo';

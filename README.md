@@ -19,16 +19,14 @@ Define your Enums
 ```php
 
 use Elephant\Enums\Attributes\Description;
-use Elephant\Enums\Contacts\Descriptor;
-use Elephant\Enums\Contacts\Converter;
+use Elephant\Enums\Contacts\Presenter;
 use Elephant\Enums\Contacts\Enumerable;
-use Elephant\Enums\Traits\Convert;
 use Elephant\Enums\Traits\GetsAttributes;
 use Elephant\Enums\Traits\HasMethods;
 
-Enums TestEnum:string implements Enumserable,Converter,Descriptor
+Enums TestEnum:string implements Enumserable,Presenter
 {
-    use HasMethods,GetsAttributes,Convert;
+    use HasMethods,GetsAttributes;
     
     #[Description('my_foo')]
     case Foo = 'foo';
@@ -44,7 +42,7 @@ Enums TestEnum:string implements Enumserable,Converter,Descriptor
 
 \Elephant\Test\Unit\TestEnum::Bar->description(); // 'my_bar'
 
-\Elephant\Test\Unit\TestEnum::Bar->convert(); // ['name' => 'Bar' 'value' => 'bar']
+\Elephant\Test\Unit\TestEnum::Bar->toViewModel(); // ['label' => 'Bar' 'value' => 'bar']
 
 // ... more method.
 

@@ -1,8 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Elephant\Enums\Traits;
 
-use Override;
 use ReflectionClassConstant;
 use Elephant\Enums\Attributes\Description;
 

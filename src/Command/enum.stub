@@ -5,14 +5,12 @@ declare(strict_types=1);
 namespace DummyNamespace;
 
 use Elephant\Enums\Attributes\Description;
-use Elephant\Enums\Contacts\Descriptor;
-use Elephant\Enums\Contacts\Converter;
+use Elephant\Enums\Contacts\Presenter;
 use Elephant\Enums\Contacts\Enumerable;
-use Elephant\Enums\Traits\Convert;
 use Elephant\Enums\Traits\GetsAttributes;
 use Elephant\Enums\Traits\HasMethods;
 
-enum DummyClass implements Enumerable,Descriptor,Converter
+enum DummyClass implements Enumerable,Presenter
 {
-    use HasMethods,GetsAttributes,Convert;
+    use HasMethods,GetsAttributes;
 }

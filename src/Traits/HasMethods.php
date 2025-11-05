@@ -1,9 +1,11 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Elephant\Enums\Traits;
 
 use Elephant\Enums\Contacts\Enumerable;
-use Override;
+use Elephant\Enums\Contacts\Presenter;
 
 trait HasMethods
 {
@@ -23,5 +25,21 @@ trait HasMethods
             $cases[] = $tolower ? strtolower($enum->{$attribute}) : $enum->{$attribute};
             return $cases;
         }, []);
+    }
+
+    public static function options(?string $customDescription = null): array
+    {
+        return array_reduce(self::cases(), function (array $options, Enumerable|Presenter $enum) use ($customDescription): array {
+            $options[] = $enum->toViewModel($customDescription);
+            return $options;
+        }, []);
+    }
+
+    public function toViewModel(?string $customDescription = null): array
+    {
+        return [
+            'label'  => is_null($customDescription) ? $this->description() : $this->{$customDescription}(),
+            'value' => $this->value,
+        ];
     }
 }

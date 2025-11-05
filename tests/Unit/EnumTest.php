@@ -13,12 +13,12 @@ class EnumTest extends TestCase
 
     public function test_enum_convert_is_return_array():void
     {
-         $this->assertIsArray(TestEnum::Foo->convert());
+         $this->assertIsArray(TestEnum::Foo->toViewModel());
     }
 
     public function test_enum_convert_method_returns_array_key_exists(): void
     {
-        $this->assertArrayHasKey('name',TestEnum::Bar->convert());
+        $this->assertArrayHasKey('name',TestEnum::Bar->toViewModel());
     }
 
     public function test_enum_method_names():void
