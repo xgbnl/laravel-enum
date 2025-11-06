@@ -27,10 +27,18 @@ trait HasMethods
         }, []);
     }
 
-    public static function options(?string $customDescription = null): array
+    public static function toArray(?string $replacer = null, array $options = []): array
     {
-        return array_reduce(self::cases(), function (array $options, Enumerable|Presenter $enum) use ($customDescription): array {
-            $options[] = $enum->toViewModel($customDescription);
+        return array_reduce(self::cases(), function (array $options, Enumerable|Presenter $enum) use ($replacer, $options): array {
+
+            if (isset($options['only']) && in_array($enum, $options['only'])) {
+                $options[] = $enum->toViewModel($replacer);
+            } else  if (isset($options['except']) && !in_array($enum, $options['except'])) {
+                $options[] = $enum->toViewModel($replacer);
+            } else {
+                $options[] = $enum->toViewModel($replacer);
+            }
+
             return $options;
         }, []);
     }

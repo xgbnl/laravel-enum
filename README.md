@@ -46,7 +46,7 @@ Enums TestEnum:string implements Enumserable,Presenter
 
 // ... more method.
 
-\Elephant\Test\Unit\TestEnum::options();
+\Elephant\Test\Unit\TestEnum::toArray();
 
 \Elephant\Test\Unit\TestEnum::names();
 

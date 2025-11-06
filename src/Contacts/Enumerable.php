@@ -7,10 +7,11 @@ interface Enumerable extends \BackedEnum
     /**
      * Get a List of Formatted Enum Items.
      * 
-     * @param string|null $customDescription Custom Description Method.
+     * @param string|null $replacer Custom Description Method.
+     * @param array $options
      * @return array
      */
-    public static function options(?string $customDescription = null): array;
+    public static function toArray(?string $replacer = null, array $options = []): array;
 
     /**
      * Get Array of Enum Values.
