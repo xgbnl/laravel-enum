@@ -9,9 +9,9 @@ use Elephant\Enums\Contacts\Presenter;
 
 trait HasMethods
 {
-    public static function names(bool $tolower = false): array
+    public static function names(bool $lower = false): array
     {
-        return self::map('name', $tolower);
+        return self::map('name', $lower);
     }
 
     public static function values(): array
@@ -19,17 +19,17 @@ trait HasMethods
         return self::map('value', false);
     }
 
-    private static function map(string $attribute, bool $tolower): array
+    private static function map(string $attribute, bool $lower): array
     {
-        return array_reduce(self::cases(), function (array $cases, Enumerable $enum) use ($attribute, $tolower): array {
-            $cases[] = $tolower ? strtolower($enum->{$attribute}) : $enum->{$attribute};
+        return array_reduce(self::cases(), function (array $cases, Enumerable|self $enum) use ($attribute, $lower): array {
+            $cases[] = $lower ? strtolower($enum->{$attribute}) : $enum->{$attribute};
             return $cases;
         }, []);
     }
 
     public static function toArray(?string $replacer = null, array $options = []): array
     {
-        return array_reduce(self::cases(), function (array $collection, Enumerable|Presenter $enum) use ($replacer, $options): array {
+        return array_reduce(self::cases(), function (array $collection, Enumerable|Presenter|self $enum) use ($replacer, $options): array {
 
             if (isset($options['only']) && in_array($enum, $options['only'])) {
                 $collection[] = $enum->toViewModel($replacer);
